@@ -7,38 +7,31 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "E-commerce Dashboard",
-      description: "Panel de administración para tienda online con análisis de datos y gestión de inventario.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["React", "Next.js", "Tailwind CSS", "Chart.js"],
-      demoUrl: "#",
-      repoUrl: "#",
-    },
-    {
-      id: 2,
-      title: "App de Gestión de Tareas",
-      description:
-        "Aplicación para organizar tareas con funcionalidades de arrastrar y soltar, filtros y estadísticas.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["React", "TypeScript", "Redux", "Styled Components"],
-      demoUrl: "#",
-      repoUrl: "#",
+      title: "Sitio Web Corporativo",
+      description: "Sitio web responsive para una empresa de Energia Sustentable con animaciones y optimización SEO.",
+      image: "https://i.postimg.cc/SKTNMY5z/RELP-IMG.png",
+      tags: ["Next.js", "CSS", "Sanity", "Framer Motion"],
+      demoUrl: "https://www.relp.ngo/",
+      repoUrl: "https://github.com/fedeeherrera",
+      codigo: false
     },
     {
       id: 3,
-      title: "Sitio Web Corporativo",
-      description: "Sitio web responsive para una empresa de tecnología con animaciones y optimización SEO.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["HTML", "CSS", "JavaScript", "GSAP"],
-      demoUrl: "#",
+      title: "Web Ambiente Las Flores",
+      description:
+        "Web desarrollador para el area de Ambiente de la Municipalidad de Las Flores.",
+      image: "https://i.postimg.cc/T1X0VC1t/Ambiente-Img.png",
+      tags: ["wordpress", "Elementor", "Gravity Forms", "Yoast SEO"],
+      demoUrl: "https://lasflores.gob.ar/ambiente-area/",
       repoUrl: "#",
-    },
+      codigo: false
+    }
   ]
 
   return (
     <section
       id="projects"
-      className="py-16 bg-gradient-to-b from-white to-palette-light/10 dark:from-palette-darkest dark:to-palette-dark/30"
+      className="bg-gradient-to-b from-white to-palette-light/10 dark:from-palette-darkest dark:to-palette-dark/30"
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
@@ -80,7 +73,8 @@ export default function Projects() {
                 </div>
               </CardContent>
               <CardFooter className="flex justify-between">
-                <Button
+                {project.codigo && (
+                  <Button
                   variant="outline"
                   size="sm"
                   className="border-palette-medium text-palette-medium dark:border-white dark:text-white"
@@ -90,6 +84,8 @@ export default function Projects() {
                     Código
                   </a>
                 </Button>
+                )}
+                
                 <Button
                   size="sm"
                   className="bg-palette-medium hover:bg-palette-dark text-white dark:bg-palette-blue dark:hover:bg-palette-medium"
@@ -109,7 +105,7 @@ export default function Projects() {
             variant="outline"
             className="border-palette-medium text-palette-medium hover:bg-palette-light/10 dark:border-white dark:text-white dark:hover:bg-palette-dark/50"
           >
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/fedeeherrera" target="_blank" rel="noopener noreferrer">
               Ver más proyectos en GitHub
             </a>
           </Button>

@@ -1,9 +1,9 @@
-"use client"
+'use client'
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import { Menu, X, Code } from "lucide-react"
-import ThemeToggle from "./theme-toggle"
+import { useState, useEffect } from 'react'
+import Link from 'next/link'
+import { Menu, X, Code } from 'lucide-react'
+import ThemeToggle from './theme-toggle'
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -14,23 +14,28 @@ export default function Header() {
       setIsScrolled(window.scrollY > 10)
     }
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white dark:bg-palette-darkest shadow-md py-2"
-          : "bg-white/80 dark:bg-palette-darkest/80 backdrop-blur-sm py-4"
+          ? 'bg-white dark:bg-palette-darkest shadow-md py-2'
+          : 'bg-white/80 dark:bg-palette-darkest/80 backdrop-blur-sm py-4'
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold text-palette-medium dark:text-palette-light flex items-center">
+          <Link
+            href="/"
+            className="text-2xl font-bold light:text-palette-medium flex items-center"
+          >
             <Code className="mr-2 h-6 w-6" />
-            <span>Portfolio</span>
+            <p>
+              Fe<span>Dev</span>
+            </p>
           </Link>
 
           {/* Desktop Navigation */}
@@ -48,7 +53,7 @@ export default function Header() {
             <button
               className="text-palette-medium dark:text-palette-light"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label={isMobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
+              aria-label={isMobileMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -75,20 +80,21 @@ export default function Header() {
 
 function NavLinks({ mobile = false, onClick = () => {} }) {
   const links = [
-    { href: "#about", label: "Sobre mí" },
-    { href: "#projects", label: "Proyectos" },
-    { href: "#skills", label: "Habilidades" },
+    { href: '#about', label: 'Sobre mí' },
+    { href: '#projects', label: 'Proyectos' },
+    { href: '#skills', label: 'Habilidades' },
   ]
 
   return links.map((link) => (
     <Link
       key={link.href}
       href={link.href}
-      className={`font-medium text-palette-medium hover:text-palette-blue dark:text-palette-light dark:hover:text-white transition-colors ${mobile ? "block py-2" : ""}`}
+      className={`font-medium text-palette-medium hover:text-palette-blue dark:text-palette-light dark:hover:text-white transition-colors ${
+        mobile ? 'block py-2' : ''
+      }`}
       onClick={onClick}
     >
       {link.label}
     </Link>
   ))
 }
-
