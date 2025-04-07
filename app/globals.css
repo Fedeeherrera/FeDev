@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+.dark {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 13, 31, 35;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+/* Colores de la paleta */
+.palette-darkest {
+  color: #0d1f23;
+}
+.palette-dark {
+  color: #132e35;
+}
+.palette-medium {
+  color: #2d4a53;
+}
+.palette-blue {
+  color: #69818d;
+}
+.palette-light {
+  color: #afb3b7;
+}
+.palette-gray {
+  color: #5a636a;
+}
+
+.bg-palette-darkest {
+  background-color: #0d1f23;
+}
+.bg-palette-dark {
+  background-color: #132e35;
+}
+.bg-palette-medium {
+  background-color: #2d4a53;
+}
+.bg-palette-blue {
+  background-color: #69818d;
+}
+.bg-palette-light {
+  background-color: #afb3b7;
+}
+.bg-palette-gray {
+  background-color: #5a636a;
+}
+
+.dark .dark\:text-white {
+  color: white;
+}
+.dark .dark\:text-palette-light {
+  color: #afb3b7;
+}
+.dark .dark\:bg-palette-darkest {
+  background-color: #0d1f23;
+}
+.dark .dark\:bg-palette-dark {
+  background-color: #132e35;
+}
+
