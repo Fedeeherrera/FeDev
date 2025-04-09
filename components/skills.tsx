@@ -14,7 +14,7 @@ export default function Skills() {
       id: 'frontend',
       title: 'Desarrollo Frontend',
       icon: <Layout className="h-8 w-8 text-palette-blue dark:text-white" />,
-      skills: ["HTML", 'CSS3', 'TypeScript | Javascript', 'React', 'Next.js', 'Astro', "Tailwind | Material Ui"],
+      skills: ["HTML", 'CSS', 'TypeScript | Javascript', 'React', 'Next.js', 'Astro', "Tailwind | Material Ui"],
     },
     {
       id: 'backend',
