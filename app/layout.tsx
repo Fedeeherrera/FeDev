@@ -6,9 +6,12 @@ import { Inter } from "next/font/google"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Portfolio de Desarrollo Frontend",
+  title: "FeDev",
   description: "Portfolio profesional de desarrollo frontend",
-    generator: 'v0.dev'
+  generator: 'v0.dev',
+  icons: {
+    icon: "/Favicon_FeDev.svg", 
+  },
 }
 
 export default function RootLayout({
