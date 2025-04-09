@@ -25,7 +25,18 @@ export default function Projects() {
       demoUrl: "https://lasflores.gob.ar/ambiente-area/",
       repoUrl: "#",
       codigo: false
-    }
+    },
+    {
+      id: 4,
+      title: "Pagina del Club de Planeadores Azul",
+      description:
+        "Pagina del aeroclub Asociacion Aeronautica Azul.",
+      image: "https://i.postimg.cc/Kj5LMRks/Azul-Site-WEb.png",
+      tags: ["wordpress", "Elementor", "Gravity Forms", "CSS3"],
+      demoUrl: "https://asociacionaeronauticaazul.com.ar/",
+      repoUrl: "#",
+      codigo: false
+    },
   ]
 
   return (
@@ -100,7 +111,7 @@ export default function Projects() {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-12 pb-12">
           <Button
             variant="outline"
             className="border-palette-medium text-palette-medium hover:bg-palette-light/10 dark:border-white dark:text-white dark:hover:bg-palette-dark/50"
