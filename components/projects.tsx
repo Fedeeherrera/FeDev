@@ -16,7 +16,7 @@ export default function Projects() {
       codigo: false
     },
     {
-      id: 3,
+      id: 2,
       title: "Web Ambiente Las Flores",
       description:
         "Web desarrollador para el area de Ambiente de la Municipalidad de Las Flores.",
@@ -27,7 +27,7 @@ export default function Projects() {
       codigo: false
     },
     {
-      id: 4,
+      id: 3,
       title: "Pagina del Club de Planeadores Azul",
       description:
         "Pagina del aeroclub Asociacion Aeronautica Azul.",
