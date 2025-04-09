@@ -32,7 +32,7 @@ export default function Projects() {
       description:
         "Pagina del aeroclub Asociacion Aeronautica Azul.",
       image: "https://i.postimg.cc/Kj5LMRks/Azul-Site-WEb.png",
-      tags: ["wordpress", "Elementor", "Gravity Forms", "CSS3"],
+      tags: ["wordpress", "Elementor", "Gravity Forms", "CSS"],
       demoUrl: "https://asociacionaeronauticaazul.com.ar/",
       repoUrl: "#",
       codigo: false
