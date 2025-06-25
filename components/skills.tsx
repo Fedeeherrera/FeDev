@@ -29,7 +29,7 @@ export default function Skills() {
       id: "backend",
       title: "Conocimientos Backend",
       icon: <Database className="h-8 w-8 text-palette-blue dark:text-white" />,
-      skills: ["Node.js", "Express", "API REST", "Nest.js", "MySQL"],
+      skills: ["Node.js", "Express", "API REST", "Nest.js", "MySQL,", "Strapi"],
     },
     {
       id: "conocimientosGenerales",
@@ -42,6 +42,7 @@ export default function Skills() {
         "Figma",
         "Trello",
         "Notion",
+        "Adobe Premiere"
       ],
     },
   ]
