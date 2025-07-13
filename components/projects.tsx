@@ -39,6 +39,17 @@ export default function Projects() {
     },
     {
       id: 3,
+      title: 'Guitar LA',
+      description:
+        'Carrito de compras de una tienda de guitarras.',
+      image: 'https://i.postimg.cc/pXB06zmt/Screenshot-2025-07-13-115153.png',
+      tags: ['React', 'CSS', 'Vite', 'Tailwind', 'Bootstrap'],
+      demoUrl: 'https://guitarlafedev.netlify.app/',
+      repoUrl: 'https://github.com/Fedeeherrera/GuitarLA',
+      codigo: true,
+    },
+    {
+      id: 4,
       title: 'Web Ambiente Las Flores',
       description:
         'Web desarrollador para el área de Ambiente de la Municipalidad de Las Flores.',
@@ -50,7 +61,7 @@ export default function Projects() {
     },
 
     {
-      id: 4,
+      id: 5,
       title: 'Página del Club de Planeadores Azul',
       description: 'Página del aeroclub Asociación Aeronáutica Azul.',
       image: 'https://i.postimg.cc/v8cXYGXq/Screenshot-2025-06-24-235941.png',
