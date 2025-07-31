@@ -22,7 +22,7 @@ export default function Projects() {
       description:
         'Sitio web responsive para una empresa de Energia Sustentable con animaciones y optimización SEO.',
       image: 'https://i.postimg.cc/SKTNMY5z/RELP-IMG.png',
-      tags: ['Next.js', 'CSS', 'Sanity', 'Framer Motion'],
+      tags: ['Next.js', 'CSS', 'Sanity', 'Framer Motion', 'Typescript'],
       demoUrl: 'https://www.relp.ngo/',
       repoUrl: 'https://github.com/fedeeherrera',
       codigo: false,
@@ -43,7 +43,7 @@ export default function Projects() {
       description:
         'Carrito de compras de una tienda de guitarras.',
       image: 'https://i.postimg.cc/pXB06zmt/Screenshot-2025-07-13-115153.png',
-      tags: ['React', 'CSS', 'Vite', 'Tailwind', 'Bootstrap'],
+      tags: ['React', 'CSS', 'Vite', 'Tailwind', 'Javascript '],
       demoUrl: 'https://guitarlafedev.netlify.app/',
       repoUrl: 'https://github.com/Fedeeherrera/GuitarLA',
       codigo: true,
@@ -59,7 +59,6 @@ export default function Projects() {
       repoUrl: '#',
       codigo: false,
     },
-
     {
       id: 5,
       title: 'Página del Club de Planeadores Azul',
@@ -69,6 +68,16 @@ export default function Projects() {
       demoUrl: 'https://asociacionaeronauticaazul.com.ar/',
       repoUrl: '#',
       codigo: false,
+    },
+    {
+      id: 6,
+      title: 'Calculadora de propinas',
+      description: 'Proyecto de una cuenta de restaurante con calculadora de propinas.',
+      image: 'https://i.postimg.cc/dtLnG8DH/Calculadora-de-propinas-imagen.png',
+      tags: ['React', 'CSS', 'Vite', 'Tailwind', 'Javascript '],
+      demoUrl: 'https://lambent-cendol-74b06f.netlify.app/',
+      repoUrl: 'https://github.com/Fedeeherrera/Calculadora-De-Propinas-',
+      codigo: true,
     },
   ]
 
