@@ -7,7 +7,7 @@ import AnimationWrapper from './animation-wrapper.tsx'
 import { motion } from 'framer-motion'
 
 export default function Hero() {
-  const handleScrollToProjects = (e : React.MouseEvent<HTMLAnchorElement>) => {
+  const handleScrollToProjects = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
     const projectsSection = document.getElementById('projects')
     if (projectsSection) {
@@ -27,7 +27,7 @@ export default function Hero() {
           <div className="w-full md:w-1/2 space-y-6">
             <AnimationWrapper animation="slideIn" delay={0.1}>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-palette-dark dark:text-white">
-                Desarrollador Web y Editor de Video
+                Frontend Developer
               </h1>
             </AnimationWrapper>
             <AnimationWrapper animation="slideIn" delay={0.3}>
@@ -40,9 +40,7 @@ export default function Hero() {
                 Soy Federico Herrera , desarrollador frontend apasionado por
                 crear interfaces de usuario atractivas y funcionales. Con
                 experiencia en React, Next.js y diseño UI/UX, me especializo en
-                construir aplicaciones web modernas y responsivas. Además,
-                también me dedico a la edición de video, lo que me permite
-                aportar una mirada creativa y audiovisual a mis proyectos.
+                construir aplicaciones web modernas y responsivas.
               </p>
             </AnimationWrapper>
             <AnimationWrapper animation="slideIn" delay={0.5}>
@@ -59,10 +57,12 @@ export default function Hero() {
               </div>
             </AnimationWrapper>
           </div>
-          <AnimationWrapper animation="scale" delay={0.5} className="w-full md:w-1/2 flex justify-center">
-            <motion.div
-              className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-palette-blue dark:border-palette-medium"
-            >
+          <AnimationWrapper
+            animation="scale"
+            delay={0.5}
+            className="w-full md:w-1/2 flex justify-center"
+          >
+            <motion.div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-palette-blue dark:border-palette-medium">
               <Image
                 src="https://iili.io/3YcXVN1.jpg"
                 alt="Desarrollador Frontend"
@@ -73,7 +73,11 @@ export default function Hero() {
             </motion.div>
           </AnimationWrapper>
         </div>
-        <AnimationWrapper animation="fadeIn" delay={1.2} className="flex justify-center mt-16">
+        <AnimationWrapper
+          animation="fadeIn"
+          delay={1.2}
+          className="flex justify-center mt-16"
+        >
           <motion.a
             href="#projects"
             onClick={handleScrollToProjects}
